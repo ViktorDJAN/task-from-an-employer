@@ -1,0 +1,501 @@
+{
+	"info": {
+		"_postman_id": "c5199599-2dfd-459d-bb15-15e9e31a3433",
+		"name": "for employer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33109530"
+	},
+	"item": [
+		{
+			"name": "Student - get students list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/student_scope/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"student_scope",
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Student - add new student to studens list",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Zddda\",\r\n    \"middleName\": \"De\",\r\n    \"secondName\": \"Ark\",\r\n    \"yearOfBirth\": 1541,\r\n    \"gender\": \"FEMALE\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/student_scope/creating",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"student_scope",
+						"creating"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Student - sorting via  an any field",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/student_scope/sorting/firstName",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"student_scope",
+						"sorting",
+						"firstName"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Student -  seek any value",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/student_scope/choose/Ivan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"student_scope",
+						"choose",
+						"Ivan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Student -  cloning student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"userId\":3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/student_scope/cloning",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"student_scope",
+						"cloning"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Student - deleting student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"userId\": 6}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/student_scope/deleting",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"student_scope",
+						"deleting"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Teacher - get teachers list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/teacher_scope/teachers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"teacher_scope",
+						"teachers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Teacher - add a new teacher to teachers' ist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "   {\r\n        \"firstName\": \"Rebecca\",\r\n        \"middleName\": \"\",\r\n        \"secondName\": \"Williams\",\r\n        \"yearOfBirth\": 1985,\r\n        \"gender\": \"FEMALE\",\r\n        \"mainSubject\": \"Biology\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/teacher_scope/creating",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"teacher_scope",
+						"creating"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Teacher - sorting via  an any field",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/teacher_scope/sorting/firstName",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"teacher_scope",
+						"sorting",
+						"firstName"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Teacher - seek any value",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/teacher_scope/choose/rebecca",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"teacher_scope",
+						"choose",
+						"rebecca"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Teacher - cloning teacher",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"userId\":5}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/teacher_scope/cloning",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"teacher_scope",
+						"cloning"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Teacher - deleting teacher",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"userId\": 9}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/teacher_scope/deleting",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"teacher_scope",
+						"deleting"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Classroom - get classrooms' list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/classroom_scope/classrooms",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"classroom_scope",
+						"classrooms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Classroom - add a new classroom to teachers' ist Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"mnemocode\":\"classTwo\",\"yearOfStudy\":2018,\"teacher\":null,\"studentList\":null}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/classroom_scope/creating",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"classroom_scope",
+						"creating"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Classroom - add a new studentToListStudents",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"classroomId\": 2,\r\n    \"studentId\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/classroom_scope/addingStudentToClassRoom",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"classroom_scope",
+						"addingStudentToClassRoom"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Classroom - assign a new Teacher",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"classroomId\": 2,\r\n    \"teacherId\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/classroom_scope/assigningTeacherToClassRoom",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"classroom_scope",
+						"assigningTeacherToClassRoom"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Classroom -  sorting via  an any field Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/classroom_scope/sorting/mnemocode",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"classroom_scope",
+						"sorting",
+						"mnemocode"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Classroom -  seek any value Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/classroom_scope/choose/rebecca",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"classroom_scope",
+						"choose",
+						"rebecca"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Classroom - deleting classroom",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
